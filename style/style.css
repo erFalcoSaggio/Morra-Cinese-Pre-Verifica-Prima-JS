@@ -1,0 +1,63 @@
+:root {
+    --def: #ff9721;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(Poppins-Regular.ttf);
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'poppins';
+}   
+
+button {
+    border: 0px solid;
+    border-radius: 10px;
+    background-color: var(--def);
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.testo-centrato {
+    text-align: center;
+}
+
+#stageIniziale {
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+}
+
+#sfida {
+    display: none;
+    justify-content: center;
+    margin: auto;
+}
+
+#sasso, #carta {
+    margin-right: 3%;
+}
+
+#stageFinale {
+    max-width: 50%;
+    display: none;
+    margin: auto;
+    margin-top: 4%;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#errore {
+    color: red;
+}

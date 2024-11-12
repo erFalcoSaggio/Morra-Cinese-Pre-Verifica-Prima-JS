@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morra Cinese - Preverifica</title>
+    <script src="script/index.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1 class="testo-centrato" id="titolo">
+        Morra Cinese - Preverifica
+    </h1>
+    <div id="stageIniziale">
+        <button onclick="inizioGioco()">
+            <img src="assets/morra cinese completa.png" alt="immagine mosse morra cinese">
+        </button>
+    </div>
+
+    <div id="sfida">
+        <button id="sasso">
+            <img src="assets/sasso.png" onclick="sceltaPersonale('sasso')" alt="sasso">
+        </button>
+        
+        <button id="carta">
+            <img src="assets/carta.png" onclick="sceltaPersonale('carta')" alt="carta">
+        </button>
+
+        <button id="forbice">
+            <img src="assets/forbice.png" onclick="sceltaPersonale('forbice')" alt="forbice">
+        </button>
+    </div>
+
+    <h3 id="risRound" class="testo-centrato"></h3>
+
+    <div id="stageFinale">
+        <table border="1">
+            <thead>
+              <tr>
+                <th colspan="2">SCELTA</th>
+                <th colspan="2">PUNTEGGIO</th>
+              </tr>
+              <tr>
+                <th>PERSONALE</th>
+                <th>AVVERSARIO</th>
+                <th>PERSONALE</th>
+                <th>AVVERSARIO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img id="sceltaPersonale" src="" alt="Scelta personale" /></td>
+                <td><img id="sceltaAvversario" src="" alt="Scelta avversario" /></td>
+                <td id="punteggioPersonale"></td>
+                <td id="punteggioAvversario"></td>
+              </tr>
+            </tbody>
+          </table>                
+    </div>
+    <p id="errore"></p>
+</body>
+</html>
